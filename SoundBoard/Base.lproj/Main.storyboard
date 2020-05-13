@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sound View Controller-->
         <scene sceneID="e3x-TI-mRm">
             <objects>
-                <viewController id="9A9-WB-sSc" sceneMemberID="viewController">
+                <viewController id="9A9-WB-sSc" customClass="SoundViewController" customModule="SoundBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z17-mR-Nuk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,12 +23,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordTapped:" destination="9A9-WB-sSc" eventType="touchUpInside" id="bSc-aa-adP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T0-cm-ELZ">
-                                <rect key="frame" x="20" y="229" width="374" height="39"/>
+                                <rect key="frame" x="20" y="233" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="9A9-WB-sSc" eventType="touchUpInside" id="u5M-qE-Ehd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sound Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cv-kg-GwI">
                                 <rect key="frame" x="108" y="310" width="199" height="30"/>
@@ -42,15 +48,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="9A9-WB-sSc" eventType="touchUpInside" id="KIh-pR-pFu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cs5-Wb-Ojx"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="CIW-J7-FgH" id="sQn-8m-uQW"/>
+                        <outlet property="nameTextField" destination="9cv-kg-GwI" id="7dY-BZ-HEv"/>
+                        <outlet property="playButton" destination="7T0-cm-ELZ" id="me4-So-bLz"/>
+                        <outlet property="recordButton" destination="TSQ-hS-RrG" id="Iph-K9-x4H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnY-p0-3Xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.9710144927537" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1715.9420289855075" y="101.78571428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

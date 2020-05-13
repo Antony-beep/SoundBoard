@@ -13,6 +13,7 @@
 		7D166AA8246C59CB00A62BBA /* SoundBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D166AA6246C59CB00A62BBA /* SoundBoard.xcdatamodeld */; };
 		7D166AAA246C59CE00A62BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D166AA9246C59CE00A62BBA /* Assets.xcassets */; };
 		7D166AAD246C59CE00A62BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D166AAB246C59CE00A62BBA /* LaunchScreen.storyboard */; };
+		7DCDA0D6246C800F00D34738 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCDA0D5246C800F00D34738 /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7D166AA9246C59CE00A62BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D166AAC246C59CE00A62BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D166AAE246C59CE00A62BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCDA0D5246C800F00D34738 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7D166AAB246C59CE00A62BBA /* LaunchScreen.storyboard */,
 				7D166AAE246C59CE00A62BBA /* Info.plist */,
 				7D166AA6246C59CB00A62BBA /* SoundBoard.xcdatamodeld */,
+				7DCDA0D5246C800F00D34738 /* SoundViewController.swift */,
 			);
 			path = SoundBoard;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCDA0D6246C800F00D34738 /* SoundViewController.swift in Sources */,
 				7D166AA8246C59CB00A62BBA /* SoundBoard.xcdatamodeld in Sources */,
 				7D166AA2246C59CB00A62BBA /* ViewController.swift in Sources */,
 				7D166AA0246C59CB00A62BBA /* AppDelegate.swift in Sources */,
