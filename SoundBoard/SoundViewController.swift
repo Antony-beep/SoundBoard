@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 import AVFoundation
 class SoundViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class SoundViewController: UIViewController {
         super.viewDidLoad()
         setupRecorder()
         playButton.isEnabled=false
+        addButton.isEnabled=false
     }
     func setupRecorder(){
         do{
@@ -58,6 +60,7 @@ class SoundViewController: UIViewController {
             //cambiar el texto del boton de grabación
             recordButton.setTitle("Record", for: .normal)
             playButton.isEnabled=true
+            addButton.isEnabled=true
         }else{
             //empezar a grabar
             audioRecorder?.record()
@@ -72,7 +75,12 @@ class SoundViewController: UIViewController {
         }catch{}
     }
     @IBAction func addTapped(_ sender: Any) {
-        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let sound = Sound(context:context)
+        sound.name = nameTextField.text
+        sound.audio = NSData(contentsOf: audioURL!) as Data?
+        (UIApplication.shared.delegate as!  AppDelegate).saveContext()
+        navigationController!.popViewController(animated: true)
     }
     /*
     // MARK: - Navigation
